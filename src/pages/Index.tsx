@@ -31,7 +31,7 @@ const features = [
   },
   {
     icon: MessageSquare,
-    title: "AI Assistant",
+    title: "WYN-Tech Ai",
     description: "Use AI to analyze and understand specific chapters or sections of any constitution.",
     link: "/ai-assistant",
     cta: "Ask AI",
@@ -46,17 +46,17 @@ const Index = () => {
 
       {/* Hero */}
       <section className="relative z-10 overflow-hidden">
-        <div className="container py-16 md:py-24 flex flex-col items-center text-center">
+        <div className="container py-10 md:py-24 flex flex-col items-center text-center">
           <motion.img
             src={justiceLogo}
             alt="Ministry of Justice Nigeria"
-            className="w-24 h-24 md:w-32 md:h-32 mb-6"
+            className="w-36 h-36 md:w-48 md:h-48 mb-6"
             initial={{ scale: 0, rotate: -180 }}
             animate={{ scale: 1, rotate: 0 }}
             transition={{ type: "spring", duration: 1.2 }}
           />
           <motion.h1
-            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground max-w-4xl leading-tight"
+            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-foreground max-w-4xl leading-tight px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
@@ -64,7 +64,7 @@ const Index = () => {
             Nigerian Justice League
           </motion.h1>
           <motion.h2
-            className="mt-2 text-2xl md:text-3xl font-medium text-primary max-w-3xl"
+            className="mt-2 text-xl md:text-3xl font-medium text-primary max-w-3xl px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -72,7 +72,7 @@ const Index = () => {
             Nigerian Constitution Review Platform
           </motion.h2>
           <motion.p
-            className="mt-4 text-lg md:text-xl text-muted-foreground max-w-2xl"
+            className="mt-4 text-base md:text-xl text-muted-foreground max-w-2xl px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}

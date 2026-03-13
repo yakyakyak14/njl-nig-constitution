@@ -149,8 +149,8 @@ const AIAssistant = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <JusticeWatermark />
-      <div className="relative z-10 container py-6 flex-1 flex flex-col max-w-3xl">
-        <h1 className="font-display text-2xl font-bold mb-2">AI Constitution Assistant</h1>
+      <div className="relative z-10 container py-4 md:py-6 px-4 md:px-8 flex-1 flex flex-col max-w-3xl">
+        <h1 className="font-display text-2xl font-bold mb-2">WYN-Tech Ai</h1>
         <p className="text-muted-foreground text-sm mb-4">Select a constitution and chapter, then ask questions about it.</p>
 
         {/* Context selectors */}
@@ -196,7 +196,7 @@ const AIAssistant = () => {
                     <Bot className="h-4 w-4 text-primary" />
                   </div>
                 )}
-                <div className={`rounded-lg p-3 max-w-[80%] ${
+                <div className={`rounded-lg p-3 max-w-[85%] sm:max-w-[80%] ${
                   m.role === "user"
                     ? "bg-primary text-primary-foreground"
                     : "bg-muted"

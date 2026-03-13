@@ -13,7 +13,7 @@ const Navbar = () => {
     { to: "/", label: "Home", icon: Scale },
     { to: "/constitutions", label: "Constitutions", icon: BookOpen },
     { to: "/contribute", label: "Contribute", icon: PenLine },
-    { to: "/ai-assistant", label: "AI Assistant", icon: MessageSquare },
+    { to: "/ai-assistant", label: "WYN-Tech Ai", icon: MessageSquare },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -23,9 +23,9 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <img src={justiceLogo} alt="Ministry of Justice" className="h-10 w-10" />
-          <div className="hidden sm:block">
-            <p className="text-sm font-bold text-nigeria-green leading-tight">Nigerian Justice League</p>
-            <p className="text-xs text-muted-foreground leading-tight">Nigerian Constitution Review Platform</p>
+          <div>
+            <p className="text-xs sm:text-sm font-bold text-nigeria-green leading-tight">Nigerian Justice League</p>
+            <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight hidden sm:block">Nigerian Constitution Review Platform</p>
           </div>
         </Link>
 

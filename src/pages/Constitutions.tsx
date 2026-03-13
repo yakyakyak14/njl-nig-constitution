@@ -78,12 +78,12 @@ const Constitutions = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <JusticeWatermark />
-      <div className="relative z-10 container py-8">
-        <h1 className="font-display text-3xl md:text-4xl font-bold mb-2">Nigerian Constitutions</h1>
+      <div className="relative z-10 container py-6 md:py-8 px-4 md:px-8">
+        <h1 className="font-display text-2xl md:text-4xl font-bold mb-2">Nigerian Constitutions</h1>
         <p className="text-muted-foreground mb-6">Browse, search, and quote from all Nigerian constitutions.</p>
 
         {/* Search */}
-        <div className="relative max-w-xl mb-8">
+        <div className="relative w-full max-w-xl mb-8">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
             placeholder="Search constitutions, chapters, or sections..."

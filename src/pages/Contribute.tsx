@@ -134,8 +134,8 @@ const Contribute = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <JusticeWatermark />
-      <div className="relative z-10 container py-8 max-w-2xl">
-        <h1 className="font-display text-3xl font-bold mb-2">Contribute to the Constitution Review</h1>
+      <div className="relative z-10 container py-6 md:py-8 px-4 md:px-8 max-w-2xl">
+        <h1 className="font-display text-2xl md:text-3xl font-bold mb-2">Contribute to the Constitution Review</h1>
         <p className="text-muted-foreground mb-8">
           Share your thoughts on any chapter of the Nigerian constitution. Your contribution will be reviewed by the Nigerian Justice League.
         </p>
