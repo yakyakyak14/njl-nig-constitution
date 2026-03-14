@@ -21,18 +21,18 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <img src={justiceLogo} alt="Ministry of Justice" className="h-10 w-10" />
           <div>
             <p className="text-xs sm:text-sm font-bold text-nigeria-green leading-tight">Nigerian Justice League</p>
             <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight hidden sm:block">Nigerian Constitution Review Platform</p>
           </div>
-        </Link>
+        </a>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-1">
           {links.map((l) => (
-            <Link key={l.to} to={l.to}>
+            <a key={l.to} href={l.to}>
               <Button
                 variant={isActive(l.to) ? "default" : "ghost"}
                 size="sm"
@@ -41,11 +41,11 @@ const Navbar = () => {
                 <l.icon className="h-4 w-4" />
                 {l.label}
               </Button>
-            </Link>
+            </a>
           ))}
-          <Link to="/admin/login">
+          <a href="/admin/login">
             <Button variant="outline" size="sm">Admin</Button>
-          </Link>
+          </a>
           <ThemeToggle />
         </div>
 
@@ -62,16 +62,16 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden border-t border-border bg-background p-4 space-y-2">
           {links.map((l) => (
-            <Link key={l.to} to={l.to} onClick={() => setOpen(false)}>
+            <a key={l.to} href={l.to} onClick={() => setOpen(false)}>
               <Button variant={isActive(l.to) ? "default" : "ghost"} className="w-full justify-start gap-2">
                 <l.icon className="h-4 w-4" />
                 {l.label}
               </Button>
-            </Link>
+            </a>
           ))}
-          <Link to="/admin/login" onClick={() => setOpen(false)}>
+          <a href="/admin/login" onClick={() => setOpen(false)}>
             <Button variant="outline" className="w-full">Admin Login</Button>
-          </Link>
+          </a>
         </div>
       )}
     </nav>

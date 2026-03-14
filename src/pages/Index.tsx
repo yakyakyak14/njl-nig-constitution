@@ -85,16 +85,16 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
           >
-            <Link to="/constitutions">
+            <a href="/constitutions">
               <Button size="lg" className="gap-2">
                 <BookOpen className="h-5 w-5" /> Browse Constitutions
               </Button>
-            </Link>
-            <Link to="/contribute">
+            </a>
+            <a href="/contribute">
               <Button size="lg" variant="outline" className="gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                 <PenLine className="h-5 w-5" /> Make a Contribution
               </Button>
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
@@ -120,11 +120,11 @@ const Index = () => {
                     </div>
                     <h3 className="font-display text-lg font-semibold mb-2">{f.title}</h3>
                     <p className="text-sm text-muted-foreground flex-1 mb-4">{f.description}</p>
-                    <Link to={f.link}>
+                    <a href={f.link}>
                       <Button variant="ghost" size="sm" className="gap-1 text-primary p-0 hover:bg-transparent hover:underline">
                         {f.cta} <ArrowRight className="h-4 w-4" />
                       </Button>
-                    </Link>
+                    </a>
                   </CardContent>
                 </Card>
               </motion.div>

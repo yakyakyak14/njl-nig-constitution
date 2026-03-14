@@ -196,11 +196,11 @@ const Constitutions = () => {
                           >
                             Copy Quote
                           </Button>
-                          <Link to={`/ai-assistant?constitution=${selectedConstitution.id}&chapter=${ch.id}`}>
+                          <a href={`/ai-assistant?constitution=${selectedConstitution.id}&chapter=${ch.id}`}>
                             <Button size="sm" variant="ghost" className="text-primary">
                               Analyze with AI
                             </Button>
-                          </Link>
+                          </a>
                         </div>
                       </AccordionContent>
                     </AccordionItem>
